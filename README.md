@@ -4,6 +4,7 @@
 - [Installation](#installation)
   - [Backup current configuration](#backup-current-configuration)
   - [Clone repository and copy to current file](#clone-repository-and-copy-to-current-file)
+- [Push current configuration to repository (for owner of repo only)](#push-current-configuration-to-repository-for-owner-of-repo-only)
 <!--toc:end-->
 
 ## Demo
@@ -69,7 +70,7 @@ cp .tmux.conf ~/.tmux.conf
 - .zshrc: Replaces your Zsh configuration file.
 - .tmux.conf: Replaces your Tmux configuration file.
 
-## Push current configuration to repository (for owner of repo)
+## Push current configuration to repository (for owner of repo only)
 
 Clone the `github` repository to our local system
 
