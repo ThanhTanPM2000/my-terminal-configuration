@@ -11,7 +11,7 @@
 local dark_opacity = 0.65
 local light_opacity = 0.90
 
-local wallpapers_glob = os.getenv("HOME") .. "/Documents/Obsidian Vault/03 - Resources/wallpapers macos/**"
+local wallpapers_glob = os.getenv("HOME") .. "/Documents/Obsidian Vault/03 - Resources/Macos/Wallpapers Macos/**"
 
 local b = require("utils/background")
 local h = require("utils/helpers")
@@ -32,7 +32,7 @@ local config = {
 
 	-- line_height = 1.1,
 
-	font = wezterm.font_with_fallback({ "CommitMono", "JetBrains Mono" }),
+	font = wezterm.font_with_fallback({ "JetBrains Mono" }),
 
 	color_scheme = "nord",
 

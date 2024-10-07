@@ -11,12 +11,10 @@ M.get_wallpaper = function(dir)
 		end
 	end
 	local wallpaper = h.get_random_entry(wallpapers)
-	-- local path = os.getenv("HOME")
-	-- 	.. "/Documents/Obsidian Vault/03 - Resources/wallpapers macos/_Desert Sands_ by Louis Coyle.heic"
-	-- local path = os.getenv("HOME") .. "/.config/wezterm/Alien_Ship_bg_vert_images/Backgrounds/spaceship_bg_3@2x.png"
-	local path = os.getenv("HOME") .. "/.config/wezterm/Alien_Ship_bg_vert_images/naruto.jpg"
+	local myCurrentFavWallpaper = os.getenv("HOME")
+		.. "/Documents/Obsidian Vault/03 - Resources/Macos/Wallpapers Macos/wallpaperflare.com_wallpaper (1).jpg"
 	return {
-		source = { File = { path = wallpaper } },
+		source = { File = { path = myCurrentFavWallpaper } },
 		height = "Cover",
 		width = "Cover",
 		horizontal_align = "Center",

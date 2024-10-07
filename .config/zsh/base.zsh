@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# themes
+ZSH_THEME="jispwoso"
+
 # User configuration
 export MANPATH="/usr/local/man:$MANPATH"
 
@@ -16,7 +19,7 @@ HYPHEN_INSENSITIVE="true"
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
-zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode auto # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
@@ -62,7 +65,34 @@ export LANG=en_US.UTF-8
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+# function nvimvenv {
+#   if [[ -e "$VIRTUAL_ENV" && -f "$VIRTUAL_ENV/bin/activate" ]]; then
+#     source "$VIRTUAL_ENV/bin/activate"
+#     command nvim "$@"
+#     deactivate
+#   else
+#     command nvim "$@"
+#   fi
+# }
+
+# alias nvim=nvimvenv
 alias vi="nvim"
 alias zshconfig="vi ~/.zshrc"
 alias ohmyzsh="vi ~/.oh-my-zsh"
 alias zshreload="source ~/.zshrc"
+
+# Groq ai
+export GROQ_API_KEY="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"
+
+# Homebrew
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+
+# Java
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+# pyenv
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+
+bindkey '^g' zsh_llm_suggestions_groq # Ctrl + G to have Groq suggest a command
+bindkey '^[^g' zsh_llm_suggestions_groq_explain       # Ctrl + Alt + G: Explain command
