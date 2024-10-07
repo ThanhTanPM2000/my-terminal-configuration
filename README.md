@@ -8,6 +8,10 @@
 
 ## Demo
 
+![zsh](zsh.png)
+
+![nvim](nvim.gif)
+
 ## Prerequisites
 
 Before you begin, ensure you have the following tools installed:
