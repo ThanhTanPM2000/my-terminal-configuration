@@ -26,7 +26,7 @@ Before you begin, ensure you have the following tools installed:
   - nvim
   - tmux
 - Install [Oh-my-zsh](https://ohmyz.sh/#install)
-- pip installed [groq](https://github.com/ThanhTanPM2000/groq_ai_zsh_suggestions)
+- Install Python, and using pip to install groq (optional)
   - `pip install groq`
 
 ## Installation
@@ -68,3 +68,20 @@ cp .tmux.conf ~/.tmux.conf
 - .config/wezterm/: Copies configurations for WezTerm (a terminal emulator).
 - .zshrc: Replaces your Zsh configuration file.
 - .tmux.conf: Replaces your Tmux configuration file.
+
+## Push current configuration to repository (for owner of repo)
+
+Clone the `github` repository to our local system
+
+```bash
+git clone https://github.com/ThanhTanPM2000/my-terminal-configuration.git && cd my-terminal-configuration
+```
+
+Copy the local configuration to repository
+
+```bash
+rm -rf .config && \
+cp -r ~/.config . && \
+cp ~/.zshrc . && \
+cp ~/.tmux.conf .
+```

@@ -1,0 +1,5 @@
+.config/*
+!.config/nvim/
+!.config/zsh/
+!.config/wezterm/
+!.config/alacritty/
